@@ -12,21 +12,21 @@ Before the introduction of custom settings, the only options were:
     
     Pros:
 
-        - Simple to handle for developers
+    - Simple to handle for developers
     
     Cons:
 
-        - You need a deploy every time you need to change a value
+    - You need a deploy every time you need to change a value
 
 - Creating custom objects where storing your configuration (even if only 1 set of data)
     
     Pros:
 
-        - High flessibility
+    - High flessibility
     
     Cons:
 
-        - You need to do a query every time you need a configuration value (this could be painfull in large and complex implementations)
+    - You need to do a query every time you need a configuration value (this could be painfull in large and complex implementations)
 
 The introduction of Custom settings made our days.
 A Custom Setting is an SObject that is available in every execution context without the need of query.
