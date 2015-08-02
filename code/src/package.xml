@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>ConfigurationManager</members>
+        <members>QuoteOfTheDayController</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>QuoteOfTheDay</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
+        <members>Date_Formats__c</members>
+        <members>Debugging__c</members>
+        <members>Endpoints__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Quote_Of_The_Day</members>
+        <name>RemoteSiteSetting</name>
+    </types>
+    <version>33.0</version>
+</Package>
