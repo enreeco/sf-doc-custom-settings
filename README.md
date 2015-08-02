@@ -317,7 +317,7 @@ In this brief chapter you have:
 * Created a List Custom Setting
 * Managed all kind of values (global, profile, list)
 * Recalled their values from Apex controller
-* Being an **awesome** developer
+* Been an **awesome** developer
 
 ## Resources
 
@@ -326,4 +326,6 @@ Salesforce Docs: https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta
 Custom settings methods: https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_methods_system_custom_settings.htm?search_text=custom%20settings
 
 Custom settings limits: https://help.salesforce.com/apex/HTViewHelpDoc?id=cs_limits.htm&language=en_US
+
+Live example: https://blog-enreeco-community-developer-edition.eu5.force.com/examples/QuoteOfTheDay 
 
