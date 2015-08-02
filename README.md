@@ -193,11 +193,11 @@ Before running the page remember to add the *http://quotesondesign.com* endpoint
 
 Now let's open the page:
 
-![](https://github.com/enreeco/sf-doc-custom-settings/master/images/img2.png)
+![](/master/images/img2.png?raw=true)
 
 You can change the hardcoded configurations on the *ConfigurationManager* class: let's set the DEBUG_MODE variable to true:
 
-![](https://github.com/enreeco/sf-doc-custom-settings/master/images/img3.png)
+![](/master/images/img3.png?raw=true)
 
 This example clearly shows that it is hard, for non developers, to alter the configurations.
 
@@ -205,7 +205,7 @@ Here come the *Custom Settings*: they are Custom Objects that can be used withou
 
 Let's create a new Custom Setting with *Setup* > *Custom Settings* > *New*:
 
-![](https://github.com/enreeco/sf-doc-custom-settings/master/images/img4.png)
+![](/master/images/img4.png?raw=true)
 
 The Hierarchic custom setting is a setting that has a global value for its fields which can be overridden on a per User / User's Profile basis.
 
@@ -213,11 +213,11 @@ This will be more clear after the custom setting configuration.
 
 A Custom Setting is just like a Custom SObject, so you can add all fields you want (with some exceptions on the types):
 
-![](https://github.com/enreeco/sf-doc-custom-settings/master/images/img5.png)
+![](/master/images/img5.png?raw=true)
 
 To set a value for the fields, click on the *Manage* button and then on the *Edit* button:
 
-![](https://github.com/enreeco/sf-doc-custom-settings/master/images/img6.png)
+![](/master/images/img6.png?raw=true)
 
 These are global values for the fields and they will be the only values we will be needing for this custom setting.
 
@@ -225,29 +225,29 @@ Set the same values we have on the *ConfigurationManager* class.
 
 Let's create another Custom Setting for the DEBUG_MODE flag:
 
-![](https://github.com/enreeco/sf-doc-custom-settings/master/images/img7.png)
+![](/master/images/img7.png?raw=true)
 
 Let's set a global value with *Manage* > *Edit*:
 
-![](https://github.com/enreeco/sf-doc-custom-settings/master/images/img8.png)
+![](/master/images/img8.png?raw=true)
 
 Then click the *New* button on the lower section of the "Manage" page and add new values for the "System Administrator" profile:
 
-![](https://github.com/enreeco/sf-doc-custom-settings/master/images/img9.png)
+![](/master/images/img9.png?raw=true)
 
 This means that the *Debugging* custom setting will have a global value and a value fitted for System Administrator users: every administrator that will execute the page will see the debug section.
 
 Finally let's add the last custom setting for the date formats, by choosing a *List* type:
 
-![](https://github.com/enreeco/sf-doc-custom-settings/master/images/img10.png)
+![](/master/images/img10.png?raw=true)
 
 With the following fields:
 
-![](https://github.com/enreeco/sf-doc-custom-settings/master/images/img11.png)
+![](/master/images/img11.png?raw=true)
 
 This time, when creating a new value, we'll have a set of values (remember the *List*) type instead of global/user/profile values, each one identified by a *Name* field:
 
-![](https://github.com/enreeco/sf-doc-custom-settings/master/images/img12.png)
+![](/master/images/img12.png?raw=true)
 
 For each locale codes you can set a specific date format plus a Default value (to be handled manually).
 
