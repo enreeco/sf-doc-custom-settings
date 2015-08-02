@@ -28,8 +28,9 @@ Before the introduction of custom settings, the only options were:
 
     - You need to do a query every time you need a configuration value (this could be painfull in large and complex implementations)
 
-The introduction of Custom settings made our days.
-A Custom Setting is an SObject that is available in every execution context without the need of query.
+The introduction of Custom settings made developer lifes easier.
+
+A Custom Setting is an SObject that is available in every execution context without the need of query, so basically you always have an instance of an object with all its fields ready to be used.
 
 ## Let's do it
 
