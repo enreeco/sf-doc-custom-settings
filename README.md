@@ -201,7 +201,7 @@ The result is:
 
 ![](/images/img13.png?raw=true)
 
-Before running the page remember to add the *http://quotesondesign.com* endpoint among the trusted endpoints for the ORG, by selecting *Setup* > *Security Controls* > *Remote Siste Settings*.
+Before running the page remember to add the *http://quotesondesign.com* endpoint among the trusted endpoints for the ORG, by selecting **Setup** > **Security Controls** > **Remote Siste Settings**.
 
 ![](/images/img1.png?raw=true)
 
@@ -217,7 +217,7 @@ This example clearly shows that it is hard, for non developers, to alter the con
 
 Here come the *Custom Settings*: they are Custom Objects that can be used without making any SOQL and are fitted to current User's context.
 
-Let's create a new Custom Setting with *Setup* > *Custom Settings* > *New*:
+Let's create a new Custom Setting with **Setup** > **Custom Settings** > **New**:
 
 ![](/images/img4.png?raw=true)
 
@@ -229,7 +229,7 @@ A Custom Setting is just like a Custom SObject, so you can add all fields you wa
 
 ![](/images/img5.png?raw=true)
 
-To set a value for the fields, click on the *Manage* button and then on the *Edit* button:
+To set a value for the fields, click on the **Manage** button and then on the **Edit** button:
 
 ![](/images/img6.png?raw=true)
 
@@ -241,17 +241,17 @@ Let's create another Custom Setting for the DEBUG_MODE flag:
 
 ![](/images/img7.png?raw=true)
 
-Let's set a global value with *Manage* > *Edit*:
+Let's set a global value with **Manage** > **Edit**:
 
 ![](/images/img8.png?raw=true)
 
-Then click the *New* button on the lower section of the "Manage" page and add new values for the "System Administrator" profile:
+Then click the **New** button on the lower section of the "Manage" page and add new values for the "System Administrator" profile:
 
 ![](/images/img9.png?raw=true)
 
 This means that the *Debugging* custom setting will have a global value and a value fitted for System Administrator users: every administrator that will execute the page will see the debug section.
 
-Finally let's add the last custom setting for the date formats, by choosing a *List* type:
+Finally let's add the last custom setting for the date formats, by choosing a **List** type:
 
 ![](/images/img10.png?raw=true)
 
@@ -304,7 +304,7 @@ public class ConfigurationManager{
 
 From now on if you need to change the endpoint of the service, debug a specific user or change data format according to user locale, you will not need to change the code but you can train an administrator to do it by him self.
 
-There is only **a limitation**:
+There is only *some limitation*:
 
 * No more than 10 MB of data across custom settings (for more details on limits https://help.salesforce.com/apex/HTViewHelpDoc?id=cs_limits.htm&language=en_US)
 * No more than 300 fields per Custom Setting
@@ -317,6 +317,7 @@ In this brief chapter you have:
 * Created a List Custom Setting
 * Managed all kind of values (global, profile, list)
 * Recalled their values from Apex controller
+* Being an **awesome** developer
 
 ## Resources
 
