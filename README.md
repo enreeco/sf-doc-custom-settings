@@ -197,6 +197,10 @@ public class ConfigurationManager{
 }
 ```
 
+The result is:
+
+![](/images/img13.png?raw=true)
+
 Before running the page remember to add the *http://quotesondesign.com* endpoint among the trusted endpoints for the ORG, by selecting *Setup* > *Security Controls* > *Remote Siste Settings*.
 
 ![](/images/img1.png?raw=true)
