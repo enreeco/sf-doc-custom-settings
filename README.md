@@ -28,7 +28,8 @@ Before the introduction of custom settings, the only options were:
 
         - You need to do a query every time you need a configuration value (this could be painfull in large and complex implementations)
 
-The introduction of Custom settings made our days!
+The introduction of Custom settings made our days.
+A Custom Setting is an SObject that is available in every execution context without the need of query.
 
 ## Let's do it
 
@@ -149,12 +150,12 @@ public with sharing class QuoteOfTheDayController {
 
 ```
 
-The controller, on page load:
+On page load, the controller:
 
 * Stores date/time of request
 * Creates an HttpRequest setting its endpoint, timeout, method (GET)
 * Sends the request and parses the response (getting the quote and the author)
-* Formats the date of call execution depending of current User's locale
+* Formats the callout's date depending of current User's locale
 
 The DEBUG_MODE allow to see some info about the current callout (for debug porpouses).
 
@@ -209,7 +210,7 @@ You can change the hardcoded configurations on the *ConfigurationManager* class:
 
 This example clearly shows that it is hard, for non developers, to alter the configurations.
 
-Here come the *Custom Settings*: they are Custom Objects that can be used without making any DML and are fitted to current User's context.
+Here come the *Custom Settings*: they are Custom Objects that can be used without making any SOQL and are fitted to current User's context.
 
 Let's create a new Custom Setting with *Setup* > *Custom Settings* > *New*:
 
@@ -267,7 +268,6 @@ public class ConfigurationManager{
     //global endpoint
     public static String CALLOUT_ENDPOINT{
         get{
-            //return 'http://quotesondesign.com/wp-json/posts?filter[orderby]=rand';
             return Endpoints__c.getOrgDefaults().Callout_Endpoint__c;
         }
     }
@@ -275,7 +275,6 @@ public class ConfigurationManager{
     //global timeout in ms
     public static Integer CALLOUT_TIMEOUT{
         get{
-            //return 60000;
             return Endpoints__c.getOrgDefaults().Callout_Timeout__c.intValue();
         }
     }
@@ -283,18 +282,12 @@ public class ConfigurationManager{
     //user/profile centric debug mode
     public static Boolean DEBUG_MODE{
         get{
-            //return true;
             return Debugging__c.getInstance().Callout_Debug_Mode__c;
         }
     }
 
     //returns a specific date format given the locale code
     public static String getDateFormat(String localeCode){
-        
-        //if(localeCode == 'it_IT'){
-        //    return 'dd/MM/yyyy';
-        //}
-        //return 'MM/dd/yyyy';*/
         Date_Formats__c defaultFormat = Date_Formats__c.getInstance('Default');
         Date_Formats__c localeFormat = Date_Formats__c.getInstance(localeCode);
         if(localeFormat != null) return localeFormat.Format__c;
@@ -303,3 +296,5 @@ public class ConfigurationManager{
 
 }
 ```
+
+From now on if you need to change the endpoint of the service, debug a specific user or change 
