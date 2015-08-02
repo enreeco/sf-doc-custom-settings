@@ -189,7 +189,7 @@ public class ConfigurationManager{
 
 Before running the page remember to add the *http://quotesondesign.com* endpoint among the trusted endpoints for the ORG, by selecting *Setup* > *Security Controls* > *Remote Siste Settings*.
 
-![](https://github.com/enreeco/sf-doc-custom-settings/master/images/img1.png)
+![](/images/img1.png?raw=true)
 
 Now let's open the page:
 
