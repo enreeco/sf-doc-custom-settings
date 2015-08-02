@@ -223,7 +223,7 @@ Let's create a new Custom Setting with *Setup* > *Custom Settings* > *New*:
 
 The Hierarchic custom setting is a setting that has a global value for its fields which can be overridden on a per User / User's Profile basis.
 
-This will be more clear after the custom setting configuration.
+This will be more clear later.
 
 A Custom Setting is just like a Custom SObject, so you can add all fields you want (with some exceptions on the types):
 
@@ -259,11 +259,11 @@ With the following fields:
 
 ![](/images/img11.png?raw=true)
 
-This time, when creating a new value, we'll have a set of values (remember the *List*) type instead of global/user/profile values, each one identified by a *Name* field:
+This time, when creating a new value, we will have a set of values (remember the *List* type) instead of global/user/profile values, each one identified by a *Name* field:
 
 ![](/images/img12.png?raw=true)
 
-For each locale codes you can set a specific date format plus a Default value (to be handled manually).
+For each locale code you can set a specific date format plus a Default value (to be handled manually).
 
 Now that we have create all the settings, we need to link them to the code, so let's change the *ConfigurationManager* class accordingly:
 
@@ -302,4 +302,27 @@ public class ConfigurationManager{
 }
 ```
 
-From now on if you need to change the endpoint of the service, debug a specific user or change 
+From now on if you need to change the endpoint of the service, debug a specific user or change data format according to user locale, you will not need to change the code but you can train an administrator to do it by him self.
+
+There is only **a limitation**:
+
+* No more than 10 MB of data across custom settings (for more details on limits https://help.salesforce.com/apex/HTViewHelpDoc?id=cs_limits.htm&language=en_US)
+* No more than 300 fields per Custom Setting
+
+## Summary
+
+In this brief chapter you have:
+
+* Created 2 different Hierarchic Custom Settings
+* Created a List Custom Setting
+* Managed all kind of values (global, profile, list)
+* Recalled their values from Apex controller
+
+## Resources
+
+Salesforce Docs: https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_customsettings.htm?search_text=custom%20settings
+
+Custom settings methods: https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_methods_system_custom_settings.htm?search_text=custom%20settings
+
+Custom settings limits: https://help.salesforce.com/apex/HTViewHelpDoc?id=cs_limits.htm&language=en_US
+
