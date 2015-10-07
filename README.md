@@ -329,3 +329,5 @@ Custom settings limits: https://help.salesforce.com/apex/HTViewHelpDoc?id=cs_lim
 
 Live example: https://blog-enreeco-community-developer-edition.eu5.force.com/examples/QuoteOfTheDay 
 
+Blog: http://blog.enree.co/2015/10/salesforce-custom-settings-how-and-why.html
+
